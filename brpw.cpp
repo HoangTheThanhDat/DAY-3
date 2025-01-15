@@ -14,12 +14,7 @@ int32_t main() {
 
         cin >> st >> k;
 
-        int i = k - 1;
-
-        while (i < st.size()) {
-                cout << st[i];
-                i += k;
-        }
+        for (int i = k - 1 ; i < st.size() ; i += k) cout << st[i];
 
         return 0;
 }
